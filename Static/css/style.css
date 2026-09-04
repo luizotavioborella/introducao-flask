@@ -1,0 +1,11 @@
+* {
+    font-family: Arial;
+}
+
+h1 {
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}

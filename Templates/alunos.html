@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Borella</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Alunos</h1>
+          <ul>
+              {% for aluno in alunos %}
+                  {% if aluno == "Letícia"%}
+                      <li>
+                          <strong> {{ aluno }} </strong>
+                      </li>
+                  {% else %}
+                      <li>{{ aluno }}</li>
+                  {% endif %}
+              {% endfor %}
+          </ul>
+    </div>
+</body>
+</html>
